@@ -63,6 +63,18 @@ button {
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
 }
+.toggle {
+    padding: 12px 25px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 2rem;
+}
 
 button:hover {
     background: #45a049;
@@ -77,6 +89,29 @@ button:hover {
     color: #fff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.error {
+    color: rgb(255, 255, 255);
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f9;
+}
+
+.container.dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f9;
+}
+
+button.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+
 
 @media (max-width: 768px) {
     .container {

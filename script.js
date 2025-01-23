@@ -1,8 +1,6 @@
-
 const numberInput = document.getElementById('number');
 const convertBtn = document.getElementById('convert-btn');
 const output = document.getElementById('output');
-
 
 const romanNumerals = [
     { value: 1000, symbol: "M" },
@@ -25,23 +23,27 @@ function convertToRoman(num) {
     
     for (const numeral of romanNumerals) {
         while (num >= numeral.value) {
-            result += numeral.symbol;
-            num -= numeral.value;
+            result += numeral.symbol; 
+            num -= numeral.value;    
         }
     }
     return result;
 }
 
+
 convertBtn.addEventListener('click', function () {
     const num = parseInt(numberInput.value.trim(), 10);
 
+
     if (!num) {
-        output.textContent = 'Please enter a valid number';
+        output.textContent = '⚠️ Please enter a valid number'; 
     } else if (num < 1) {
-        output.textContent = 'Please enter a number greater than or equal to 1';
+        output.textContent = '⚠️ Please enter a number greater than or equal to 1'; 
     } else if (num >= 4000) {
-        output.textContent = 'Please enter a number less than or equal to 3999';
+        output.textContent = '⚠️ Please enter a number less than or equal to 3999'; 
     } else {
-        output.textContent = convertToRoman(num);
+        output.textContent = `✅ Roman numeral: ${convertToRoman(num)}`; 
     }
 });
+
+
