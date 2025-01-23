@@ -1,5 +1,7 @@
 # Roman Numeral Converter
 
+![alt text](image.png)
+
 ## Overview
 The **Roman Numeral Converter** is a web application that takes a numeric input and converts it into its Roman numeral equivalent. This project demonstrates proficiency in front-end web development, showcasing modern styling techniques, responsive design, and clean code structure.
 
@@ -63,11 +65,6 @@ This project was built as a portfolio piece to:
 - Demonstrate attention to detail and user-centric design principles.
 
 ---
-
-## Preview
-Add a live demo or screenshot of the project here (if applicable).
-
-
 
 ## Contact
 If you're interested in learning more about this project or would like to collaborate, feel free to reach out!
